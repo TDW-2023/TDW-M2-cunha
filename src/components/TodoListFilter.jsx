@@ -2,6 +2,7 @@ import * as React from 'react';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { useState } from 'react'
+import PropTypes from 'prop-types'
 
 
 export default function TodoListFilter(props) {
@@ -34,3 +35,6 @@ export default function TodoListFilter(props) {
     )
 }
 
+TodoListFilter.propTypes = {
+    filterUpdate: PropTypes.func.isRequired,
+};

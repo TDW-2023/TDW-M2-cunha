@@ -5,6 +5,7 @@ import Divider from '@mui/material/Divider';
 import Button from '@mui/material/Button';
 import { useState } from 'react'
 import TextField from '@mui/material/TextField';
+import PropTypes from 'prop-types'
 
 
 export default function Todo(props) {
@@ -108,3 +109,10 @@ export default function Todo(props) {
     )
 }
 
+Todo.propTypes = {
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    completed: PropTypes.bool.isRequired,
+    onToggle: PropTypes.func.isRequired,
+    onDelete: PropTypes.func.isRequired,
+};

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import './App.css'
+import './ex1.css'
 import TodoForm from './components/TodoForm'
 import TodoListFilter from './components/TodoListFilter'
 import Divider from '@mui/material/Divider';
@@ -23,7 +23,7 @@ const data_tmp = [
    
 ]
 
-function App() {
+export default function EX1() {
   const [data, setData] = useState(data_tmp)
   const [filter, setFilter] = useState("all")
 
@@ -69,4 +69,3 @@ function App() {
   )
 }
 
-export default App
