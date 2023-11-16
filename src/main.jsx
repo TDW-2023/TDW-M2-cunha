@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import EX1 from './ex1.jsx'
 import EX2 from './ex2.jsx'
+import EX3 from './ex3.jsx'
+import { ATM } from './atm.jsx'
+import { Provider } from 'react-redux'
 import './index.css'
 import {
   createBrowserRouter,
@@ -22,10 +25,16 @@ const router = createBrowserRouter([
     path: "/ex2",
     element: <EX2 />,
   },
+  {
+    path: "/ex3",
+    element: <EX3 />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>,
+  <Provider store={ATM}>
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>
+  </Provider>,
 )
