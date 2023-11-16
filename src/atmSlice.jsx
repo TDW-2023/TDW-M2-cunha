@@ -9,7 +9,7 @@ export const atmSlice = createSlice({
   initialState,
   reducers: {
     decrementByAmount: (state, action) => {
-        state.value += action.payload
+        state.value -= action.payload
     },
     incrementByAmount: (state, action) => {
         state.value += action.payload
