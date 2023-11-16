@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 import { useState } from 'react'
 
 import { useSelector, useDispatch } from 'react-redux'
-import { decrementByAmount, incrementByAmount } from './atmSlice'
+import { decrementByAmount, incrementByAmount } from './features/atmSlice'
 
 export default function EX3() {
   const money = useSelector((state) => state.atm.value)
