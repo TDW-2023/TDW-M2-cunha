@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 import { useState } from 'react'
 
 import { useSelector, useDispatch } from 'react-redux'
-import { decrementByAmount, incrementByAmount } from './features/atmSlice'
+//import { decrementByAmount, incrementByAmount } from './features/imgSlice'
 
 export default function EX3() {
   const money = useSelector((state) => state.atm.value)
@@ -22,8 +22,8 @@ export default function EX3() {
 
       <TextField fullWidth onChange={e => setText(e.target.value)} id="outlined-basic" label="Amount" variant="outlined" />
 
-      <Button onClick={() => dispatch(decrementByAmount(parseFloat(text)))} variant="contained">Withdraw</Button>
-      <Button onClick={() => dispatch(incrementByAmount(parseFloat(text)))} variant="contained">Deposit</Button>
+      {/* <Button onClick={() => dispatch(decrementByAmount(parseFloat(text)))} variant="contained">Withdraw</Button>
+      <Button onClick={() => dispatch(incrementByAmount(parseFloat(text)))} variant="contained">Deposit</Button> */}
       
 
       </Stack>

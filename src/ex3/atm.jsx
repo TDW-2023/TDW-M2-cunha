@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit'
-import atmReducer from './features/atmSlice'
+import imgReducer from './features/imgSlice'
 
-export const ATM = configureStore({
+export const IMG = configureStore({
   reducer: {
-    atm: atmReducer,
+    img: imgReducer,
   },
 })
