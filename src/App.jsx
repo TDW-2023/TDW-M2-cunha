@@ -18,6 +18,9 @@ export default function App() {
           <li>
             <Link to={`/ex4`}>EX4</Link>
           </li>
+          <li>
+            <Link to={`/ex5`}>EX5</Link>
+          </li>
         </ul>
       </nav>
     );

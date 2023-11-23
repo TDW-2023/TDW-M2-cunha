@@ -5,7 +5,8 @@ import EX1 from './ex1.jsx'
 import EX2 from './ex2.jsx'
 import EX3 from './ex3/ex3.jsx'
 import EX4 from './ex4.jsx'
-import { IMG } from './ex3/atm.jsx'
+import EX5 from './ex5.jsx'
+import { store } from './ex3/atm.jsx'
 import { Provider } from 'react-redux'
 import './index.css'
 import {
@@ -34,10 +35,14 @@ const router = createBrowserRouter([
     path: "/ex4",
     element: <EX4 />,
   },
+  {
+    path: "/ex5",
+    element: <EX5 />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <Provider store={IMG}>
+  <Provider store={store}>
     <React.StrictMode>
       <RouterProvider router={router} />
     </React.StrictMode>
